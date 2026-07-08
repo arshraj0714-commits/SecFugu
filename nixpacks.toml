@@ -1,0 +1,11 @@
+[build]
+image = "node:18"
+
+[build.buildCommand]
+build = "npm run build"
+
+[deploy]
+startCommand = "node dist/index.js"
+
+[providers]
+railway = true
